@@ -12,6 +12,7 @@ function song(title, file, playing){
 
 $(document).ready(function(){
 	//Song List
+	//Only Songs with sheet music will be uploaded.
 	list.push(new song("Lunaria", "mp3/Lunaria.mp3", false));
 	list.push(new song("Cantabile", "mp3/Cantabile.mp3", false));
 	list.push(new song("Ao", "mp3/Ao.mp3", false));
