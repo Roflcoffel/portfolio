@@ -4,9 +4,35 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../lib/jspanel-4.0.0/jspanel.css">
+
 	<title>Portfolio</title>
 </head>
 <body>
+	 <!-- loading jsPanel javascript -->
+    <script src="../lib/jspanel-4.0.0/jspanel.js"></script>
+    <!-- optionally load jsPanel extensions -->
+    <script src="../lib/jspanel-4.0.0/extensions/contextmenu/jspanel.contextmenu.js"></script>
+    <script src="../lib/jspanel-4.0.0/extensions/hint/jspanel.hint.js"></script>
+    <script src="../lib/jspanel-4.0.0/extensions/modal/jspanel.modal.js"></script>
+    <script src="../lib/jspanel-4.0.0/extensions/tooltip/jspanel.tooltip.js"></script>
+    <script src="../lib/jspanel-4.0.0/extensions/dock/jspanel.dock.js"></script>
+	<script>
+        // create a default jsPanel
+        jsPanel.create({
+       		theme: "rgb(107, 133, 187)", //Amiga Colour
+       		headerTitle: 'Amiga',
+		    position:    'center-top 0 80',
+		    contentSize: '450 250',
+		    callback: function () {
+        		this.content.innerHTML = '<p>Example panel ...</p>'
+		    },
+		    onbeforeclose: function () {
+		        return confirm('Do you really want to close the panel?');
+		    }
+		});
+    </script>
+	
 	<div class="top"></div>
 	<ul class="navul">
 	  <li class="navli"><div title="Home"><a class="active fa fa-home" style="font-size: 18px;" href="#"></a></div></li>

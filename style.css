@@ -2,8 +2,14 @@
 
 /* CONTAINER */
 
+@font-face {
+	font-family: AmigaForever;
+	src: url(fonts/amiga_forever/amiga4ever_pro2.ttf);
+}
+
 body {
-	font-family: Heltvetica, Arial, Calibri, sans-serif
+	font-family: AmigaForever;
+	font-size: 14px;
 }
 
 #body {
