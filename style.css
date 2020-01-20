@@ -3,12 +3,12 @@
 /* CONTAINER */
 
 @font-face {
-	font-family: AmigaForever;
-	src: url(fonts/amiga_forever/amiga4ever_pro2.ttf);
+	font-family: JetBrains;
+	src: url(fonts/JetBrainsMono-Bold.ttf);
 }
 
 body {
-	font-family: AmigaForever;
+	font-family: JetBrains;
 	font-size: 14px;
 }
 
@@ -114,4 +114,9 @@ li a:hover {
 .songItem {
 	grid-column-start: 1;
 	grid-column-end: 2;
+}
+
+/* Fonts Terminal */
+.terminal {
+	--size: 2.5
 }

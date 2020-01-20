@@ -1,0 +1,35 @@
+TODO:
+
+Add Kuro's Ao drawing as desktop image.
+
+Start with a fullscreen jspanel, with a jquery terminal inside.
+
+Create a simple window manager, that arranges windows like this:
+________________________
+|           |          |
+|           |          |
+|           |__________|
+|           |          |
+|           |          |
+|___________|__________|
+
+Add a JQuery Terminal to the windows (for now they do nothing).
+
+Add keybinds to: 
+    create a window can only create three windows for now.
+    close a window
+    change MASTER window
+    Switch window
+
+Preffered Binds (if possible):
+    Super+Enter
+    Super+x
+    Super+Left_Alt+Enter
+    Super+j
+
+OnHover switch highlight and switch terminal window.
+
+_________________________________________________________
+
+Figure out how to display everything!
+
