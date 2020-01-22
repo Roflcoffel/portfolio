@@ -3,7 +3,6 @@
 <head>
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 	<!-- jsPanel CSS -->	
 	<link href="https://cdn.jsdelivr.net/npm/jspanel4@4.9.1/dist/jspanel.css" rel="stylesheet">
@@ -26,78 +25,14 @@
 	<script src="https://unpkg.com/jquery.terminal@2.x.x/js/jquery.terminal.min.js"></script>
 	<link rel="stylesheet" href="https://unpkg.com/jquery.terminal@2.x.x/css/jquery.terminal.min.css"/>
 
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Portfolio</title>
 </head>
 <body>
-	<script>	
-		// create a default jsPanel
-        var masterPanel = jsPanel.create({
-			dragit: {
-				disabled: true
-			},
-			resizeit: {
-				disabled: true
-			},
-			theme: {
-				bgPanel: 'white',
-				bgContent: 'black',
-				colorHeader: 'black',
-				colorContent: '#333',
-				border: '2px solid black'
-			},
-       		headerTitle: 'Master',
-		    position: 'left-top 5 5',
-		    contentSize: {
-				width: function() {
-					return window.innerWidth/2-10;
-				},
-				height: function() {
-					return window.innerHeight-55;
-				}
-			},
-		    callback: function () {
-        		this.content.innerHTML = "<div id='term1'></div>";
-		    },
-		});
+	<script src="JsPanelTiler.js"></script>
+	<script src="JsPanelMain.js"></script>
+	<script src="Terminal.js"></script>
 
-		var slaveRight = jsPanel.create({
-			theme: {
-				bgPanel: 'white',
-				bgContent: 'black',
-				colorHeader: 'black',
-				colorContent: '#333',
-				border: '2px solid black'
-			},
-			headerTitle: 'Right',
-			callback: function () {
-				this.content.innerHTML = "<div id='term2'></div>";
-			}
-		}).dock({
-			master: masterPanel,
-			position: {offsetX:5},
-			linkSlaveHeight: true,
-			linkSlaveWidth: true
-		});
-
-		masterPanel.resizeit('disable');
-		masterPanel.dragit('disable');
-
-		command = {
-			echo: function(value) {
-				this.echo(value);
-			}
-		}
-
-		$(function() {
-			$("#term1").terminal(command, {
-				greetings: "Welcome To My Portfolio!\n",
-				prompt: "[[;white;]>>> ]"
-			});
-			$("#term2").terminal();
-		})
-
-    </script>
-	
 	<div class="top"></div>
 	<ul class="navul">
 	  <li class="navli"><div title="Home"><a class="active fa fa-home" style="font-size: 18px;" href="#"></a></div></li>
@@ -108,21 +43,6 @@
 	<h2 class="center">Andreas Johansson's Stuff</h2>
 	<div id="body">
 		<div id="info">
-			<p>Welcome<br><br>
-			this site is currently under construction, the current plan is to rebuild it using ASP.NET MVC
-			<hr>
-			here you will find all the random stuff I have made and thought would be interesting.
-			current project list:
-			<ul>
-				<li>Rebuild webbsite</li>
-				<li>Atari 2600 Restoration (Missing Parts)</li>
-				<li>Touhou Mod for EUIV</li>
-				<li>8-Bit Computer from Scratch</li>
-				<li>NAND2Tetris Course</li>
-				<li>Generic Guesser Game to expand the Nihongo program</li>
-				<li>Live record and upload my songs and sheet music to this website</li>
-			</ul>
-			<br><br>
 		</div>
 	</div>
 </body>

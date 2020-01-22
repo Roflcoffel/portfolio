@@ -118,5 +118,6 @@ li a:hover {
 
 /* Fonts Terminal */
 .terminal {
-	--size: 2.5
+	--size: 2;
+	--color: white;
 }

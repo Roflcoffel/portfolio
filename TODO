@@ -1,25 +1,15 @@
 TODO:
 
-Add Kuro's Ao drawing as desktop image.
+//Index.html
+See if the terminal can be a little transparent.
+if it can add Kuro's Ao drawing as desktop image.
 
-Start with a fullscreen jspanel, with a jquery terminal inside.
-
-Create a simple window manager, that arranges windows like this:
-________________________
-|           |          |
-|           |          |
-|           |__________|
-|           |          |
-|           |          |
-|___________|__________|
-
-Add a JQuery Terminal to the windows (for now they do nothing).
-
+//JsPanelTiler or JsPanelMain
 Add keybinds to: 
     create a window can only create three windows for now.
     close a window
     change MASTER window
-    Switch window
+    Switch window focus
 
 Preffered Binds (if possible):
     Super+Enter
@@ -29,7 +19,16 @@ Preffered Binds (if possible):
 
 OnHover switch highlight and switch terminal window.
 
-_________________________________________________________
+//Terminal
+Create a fake filesystem
 
-Figure out how to display everything!
+essential commands:
+ls, dir  - List current directory 
+cd       - Change Directory
+cat      - List Content of a file
+open     - Open a file in a Floating JsPanel Window .html or a dir.
+play     - Start playing provided .mp3 file.
+download - To download a file.
+feh      - to open a only a picture in a JsPanel.
+
 
