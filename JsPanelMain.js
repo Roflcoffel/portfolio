@@ -11,9 +11,9 @@ var options = {
         disabled: true
     },
     theme: {
-        bgPanel: 'white',
-        bgContent: 'black',
-        colorHeader: 'black',
+        bgPanel: 'rgba(0,0,0,0.3)',
+        bgContent: 'rgba(0,0,0,0.3)',
+        colorHeader: 'rgba(0,0,0,0.3)',
         colorContent: 'white',
         border: '1px solid black'
     },

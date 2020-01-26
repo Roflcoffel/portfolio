@@ -10,6 +10,8 @@
 body {
 	font-family: JetBrains;
 	font-size: 14px;
+	background-image: url(art/Ao_sky.jpg);
+	background-size: cover;
 }
 
 #body {
@@ -120,4 +122,5 @@ li a:hover {
 .terminal {
 	--size: 2;
 	--color: white;
+	--background: rgba(0,0,0,0.0);
 }

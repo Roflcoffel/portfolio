@@ -31,4 +31,54 @@ play     - Start playing provided .mp3 file.
 download - To download a file.
 feh      - to open a only a picture in a JsPanel.
 
+//Projects To Display, Try to add everything.
+//Challanges
+    Agemashite, Firworks - Lua, Löve2d
+    Fractal Tree - Lua, Löve2d
+    Maurer Rose - Lua, Löve2d
+    Lw Challange - JavaScript, Python
 
+//Games
+    Ultimate_Tic-Tac-Toe - Lua, Löve2d
+    Gnop - Lua, Löve2d
+    Snake - Lua, Löve2d
+    Rougelike - Lua
+    Magissa - DarkBasic
+    Snake - JavaScript
+    Snake_V2 - JavaScript
+    Breakout - JavaScript
+    Tetris - Java, JavaFX
+
+//Tools
+    Vlc Timestamp - Lua
+    Bookmark Tool - C, (Finns på github) (Not done)
+    Links Desu - Html, Chrome Extenstion
+    BetterQueue - Html, Js, Chrome Extenstion
+    BetterCrunch - Html, Js, Chrome Extenstion
+    Bash, PowerShell and Python Scripts.
+
+//Web
+    Lattice - TypeScript, REST-API
+
+//Hardware / Electronics
+    Midi Visualizer - Raspberry Zero, Python
+    BASIC Retro Computer - KiCad, Arduino
+
+//Music
+    Cantablie Score.pdf
+    Lunaria Score.pdf
+
+//Mods
+    Gensokyo - EU4 (Not Done) (Blog)
+
+//Blog / Intressant
+    Hello World - BrainFuck, bfi (Blog)
+    Hello World - Assembler x86, nasm (Blog)
+    Primes - Haskell (Blog)
+    C64, GEOS -> RSC Channel -> Discord. (Blog)
+    The Transformation of Roflcoffel.se (Blog)
+    Webio and Webvideo Java (Blog)
+    JavaFX Saker (Music Player, Calc, Tetris)(Blog)
+    A Billion Programs (Blog) (Linux Scripts)
+    Linux From Scratch (Blog) (Linux)
+    Projects: 90% Started, 9% On Hold, 1% Complete (Blog)
