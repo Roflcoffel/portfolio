@@ -1,126 +1,128 @@
 var filesystem = {
     children: {
         'Projects': {
-            'Challenges': {
-                children: {
-                    'index.html': {
-                        path: './Projects/Challenges/index.html' //Link to a real index.html
-                    },
-                    'Agemashite': {
-                        children: {
-                            'index.html': {
-                                path: './Projects/Challenges/Agemashite/index.html' //Link to a real index.html
-                            }
-                        }
-                    },
-                    'Fractal_Tree': {
-                        children: {
-                            'index.html': {
-                                path: './Projects/Challenges/Fractal_Tree/index.html' //Link to a real index.html
-                            }
-                        }
-                    },
-                    'Maurer_Rose': {
-                        children: {
-                            'index.html': {
-                                path: './Projects/Challenges/Maurer_Rose/index.html' //Link to a real index.html
-                            }
-                        }
-                    },
-                    'LW_Challenge': {
-                        children: {
-                            'index.html': {
-                                path: './Projects/Challenges/LW_Challenge/index.html' //Link to a real index.html
-                            }
-                        }
-                    }
-                }
-            },
-            'Games': {
-                children: {
-                    'Ultimate_Tic_Tac_Toe': {
-                        children: {
-
-                        }
-                    },
-                    'Gnop': {
-                        children: {
-
-                        }
-                    },
-                    'Snake': {
-                        children: {
-                            'Lua_ver': {
-                                children: {
-
+            children: {
+                'Challenges': {
+                    children: {
+                        'index.html': {
+                            path: './Projects/Challenges/index.html' //Link to a real index.html
+                        },
+                        'Agemashite': {
+                            children: {
+                                'index.html': {
+                                    path: './Projects/Challenges/Agemashite/index.html' //Link to a real index.html
                                 }
-                            },
-                            'JS_v1': {
-                                children: {
-
+                            }
+                        },
+                        'Fractal_Tree': {
+                            children: {
+                                'index.html': {
+                                    path: './Projects/Challenges/Fractal_Tree/index.html' //Link to a real index.html
                                 }
-                            },
-                            'JS_v2': {
-                                children: {
-
+                            }
+                        },
+                        'Maurer_Rose': {
+                            children: {
+                                'index.html': {
+                                    path: './Projects/Challenges/Maurer_Rose/index.html' //Link to a real index.html
+                                }
+                            }
+                        },
+                        'LW_Challenge': {
+                            children: {
+                                'index.html': {
+                                    path: './Projects/Challenges/LW_Challenge/index.html' //Link to a real index.html
                                 }
                             }
                         }
-                    },
-                    'Breakout': {
-                        children: {
+                    }
+                },
+                'Games': {
+                    children: {
+                        'Ultimate_Tic_Tac_Toe': {
+                            children: {
 
-                        }
-                    },
-                    'Tetris': {
-                        children: {
+                            }
+                        },
+                        'Gnop': {
+                            children: {
 
-                        }
-                    },
-                    'Roguelike': {
-                        children: {
+                            }
+                        },
+                        'Snake': {
+                            children: {
+                                'Lua_ver': {
+                                    children: {
 
-                        }
-                    },
-                    'Magissa': {
-                        children: {
+                                    }
+                                },
+                                'JS_v1': {
+                                    children: {
 
+                                    }
+                                },
+                                'JS_v2': {
+                                    children: {
+
+                                    }
+                                }
+                            }
+                        },
+                        'Breakout': {
+                            children: {
+
+                            }
+                        },
+                        'Tetris': {
+                            children: {
+
+                            }
+                        },
+                        'Roguelike': {
+                            children: {
+
+                            }
+                        },
+                        'Magissa': {
+                            children: {
+
+                            }
                         }
                     }
-                }
-            },
-            'Tools': {
-                children: {
+                },
+                'Tools': {
+                    children: {
 
-                }
-            },
-            'Hardware_Stuff': {
-                children: {
-                    'Midi_Visualizer': {
-                        children: {
+                    }
+                },
+                'Hardware_Stuff': {
+                    children: {
+                        'Midi_Visualizer': {
+                            children: {
 
-                        }
-                    },
-                    'BASIC_Retro_Computer': {
-                        children: {
+                            }
+                        },
+                        'BASIC_Retro_Computer': {
+                            children: {
 
+                            }
                         }
                     }
-                }
-            },
-            'Web': {
-                children: {
-                    'Lattice': {
-                        children: {
+                },
+                'Web': {
+                    children: {
+                        'Lattice': {
+                            children: {
 
+                            }
                         }
                     }
-                }
-            },
-            'Mods': {
-                children: {
-                    'Gensokyo_EU4': {
+                },
+                'Mods': {
+                    children: {
+                        'Gensokyo_EU4': {
 
+                        }
                     }
                 }
             }
@@ -191,7 +193,7 @@ var filesystem = {
 }
 
 var path = [];
-var cwd = fs;
+var cwd = filesystem;
 function restore_cwd(fs, path) {
     path = path.slice();
     while (path.length) {
@@ -209,15 +211,16 @@ function is_dir(obj) {
 function is_file(obj) {
     return !!obj && typeof obj.path === 'string';
 }
-var commands = {
+
+var command = {
     cd: function(dir) {
         if (dir === '/') {
             path = [];
-            cwd = restore_cwd(fs, path);
+            cwd = restore_cwd(filesystem, path);
         } else if (dir === '..') {
             if (path.length) {
                 path.pop(); // remove from end
-                cwd = restore_cwd(fs, path);
+                cwd = restore_cwd(filesystem, path);
             }
         } else if (!is_dir(cwd.children[dir])) {
             this.error($.terminal.escape_brackets(dir) + ' is not a directory');
