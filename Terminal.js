@@ -1,194 +1,78 @@
 var filesystem = {
     children: {
-        'Projects': {
-            children: {
-                'Challenges': {
-                    children: {
-                        'index.html': {
-                            path: './Projects/Challenges/index.html' //Link to a real index.html
-                        },
-                        'Agemashite': {
-                            children: {
-                                'index.html': {
-                                    path: './Projects/Challenges/Agemashite/index.html' //Link to a real index.html
-                                }
-                            }
-                        },
-                        'Fractal_Tree': {
-                            children: {
-                                'index.html': {
-                                    path: './Projects/Challenges/Fractal_Tree/index.html' //Link to a real index.html
-                                }
-                            }
-                        },
-                        'Maurer_Rose': {
-                            children: {
-                                'index.html': {
-                                    path: './Projects/Challenges/Maurer_Rose/index.html' //Link to a real index.html
-                                }
-                            }
-                        },
-                        'LW_Challenge': {
-                            children: {
-                                'index.html': {
-                                    path: './Projects/Challenges/LW_Challenge/index.html' //Link to a real index.html
-                                }
-                            }
-                        }
-                    }
-                },
-                'Games': {
-                    children: {
-                        'Ultimate_Tic_Tac_Toe': {
-                            children: {
-
-                            }
-                        },
-                        'Gnop': {
-                            children: {
-
-                            }
-                        },
-                        'Snake': {
-                            children: {
-                                'Lua_ver': {
-                                    children: {
-
-                                    }
-                                },
-                                'JS_v1': {
-                                    children: {
-
-                                    }
-                                },
-                                'JS_v2': {
-                                    children: {
-
-                                    }
-                                }
-                            }
-                        },
-                        'Breakout': {
-                            children: {
-
-                            }
-                        },
-                        'Tetris': {
-                            children: {
-
-                            }
-                        },
-                        'Roguelike': {
-                            children: {
-
-                            }
-                        },
-                        'Magissa': {
-                            children: {
-
-                            }
-                        }
-                    }
-                },
-                'Tools': {
-                    children: {
-
-                    }
-                },
-                'Hardware_Stuff': {
-                    children: {
-                        'Midi_Visualizer': {
-                            children: {
-
-                            }
-                        },
-                        'BASIC_Retro_Computer': {
-                            children: {
-
-                            }
-                        }
-                    }
-                },
-                'Web': {
-                    children: {
-                        'Lattice': {
-                            children: {
-
-                            }
-                        }
-                    }
-                },
-                'Mods': {
-                    children: {
-                        'Gensokyo_EU4': {
-
-                        }
-                    }
-                }
-            }
-        },
-        'Music': {
-            children: {
+        'Projects': {children: {
+            'Challenges': {children: {
                 'index.html': {
-                    path: './Music/index.html'
+                    path: './Projects/Challenges/index.html' //Link to a real index.html
                 },
-                'Cantabile_Score.pdf': {
-                    path: './Music/Cantabile_Score.pdf' //link to real pdf
+                'Agemashite': {children: {
+                    'index.html': {
+                        path: './Projects/Challenges/Agemashite/index.html' //Link to a real index.html
+                    }}
                 },
-                'Lunaria_Score.pdf': {
-                    path: './Music/Lunaria_Score.pdf' //link to real pdf
+                'Fractal_Tree': {children: {
+                    'index.html': {
+                        path: './Projects/Challenges/Fractal_Tree/index.html' //Link to a real index.html
+                    }}
+                },
+                'Maurer_Rose': {children: {
+                    'index.html': {
+                        path: './Projects/Challenges/Maurer_Rose/index.html' //Link to a real index.html
+                    }}
+                },
+                'LW_Challenge': {children: {
+                    'index.html': {
+                        path: './Projects/Challenges/LW_Challenge/index.html' //Link to a real index.html
+                    }}
                 }
-            }            
-        },
-        'Stuff': {
-            children: {
-                'Hello_World_With_8_Operators': {
-                    children:  {
-
-                    }
+            }},
+            'Games': {children: {
+                'Ultimate_Tic_Tac_Toe': {children: {}},
+                'Gnop': {children: {}},
+                'Snake': {children: {
+                    'Lua_ver': {children: {}},
+                    'JS_v1': {children: {}},
+                    'JS_v2': {children: {}}}
                 },
-                'Hello_World_In_X86_And_Binary': {
-                    children: {
-
-                    }
-                },
-                'Functional_Programming_In_Haskell_Lua_C#': {
-                    children: {
-
-                    }
-                },
-                'C64->GEOS->RSC_Channel->Discord': {
-                    children: {
-
-                    }
-                },
-                'The_transformation_of_Roflcoffel.se': {
-                    children: {
-
-                    }
-                },
-                'Webio_and_Webvideo_Java': {
-                    children: {
-
-                    }
-                },
-                'JavaFX_Saker': {
-                    children: {
-
-                    }
-                },
-                'A_Billion_Programs_(Scripting)': {
-                    children: {
-
-                    }
-                },
-                'Linux_From_Scratch': {
-                    children: {
-
-                    }
-                }
+                'Breakout': {children: {}},
+                'Tetris': {children: {}},
+                'Roguelike': {children: {}},
+                'Magissa': {children: {}}
+            }},
+            'Tools': {children: {}},
+            'Hardware_Stuff': {children: {
+                'Midi_Visualizer': {children: {}},
+                'BASIC_Retro_Computer': {children: {}}
+            }},
+            'Web': {children: {
+                'Lattice': {children: {}}
+            }},
+            'Mods': {
+                children: {'Gensokyo_EU4': {}}
             }
-        }
+        }},
+        'Music': {children: {
+            'index.html': {
+                path: './Music/index.html'
+            },
+            'Cantabile_Score.pdf': {
+                path: './Music/Cantabile_Score.pdf' //link to real pdf
+            },
+            'Lunaria_Score.pdf': {
+                path: './Music/Lunaria_Score.pdf' //link to real pdf
+            }
+        }},
+        'Stuff': {children: {
+            'Hello_World_With_8_Operators': {children:  {}},
+            'Hello_World_In_X86_And_Binary': {children: {}},
+            'Functional_Programming_In_Haskell_Lua_C#': {children: {}},
+            'C64->GEOS->RSC_Channel->Discord': {children: {}},
+            'The_transformation_of_Roflcoffel.se': {children: {}},
+            'Webio_and_Webvideo_Java': {children: {}},
+            'JavaFX_Saker': {children: {}},
+            'A_Billion_Programs_(Scripting)': {children: {}},
+            'Linux_From_Scratch': {children: {}}
+        }}
     }
 }
 
