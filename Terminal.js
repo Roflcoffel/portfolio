@@ -143,10 +143,31 @@ var command = {
     }
 };
 
+function completion(string, callback) {
+    var command = this.get_command();
+    var cmd = $.terminal.parse_command(command);
+    if (cmd.name === 'ls') {
+        callback([]);
+    } else if (cmd.name === 'cd') {
+        var dirs = Object.keys(cwd.children).filter(function(key) {
+            return is_dir(cwd.children[key]);
+        });
+        callback(dirs);
+    } else if (cmd.name === 'cat') {
+        var files = Object.keys(cwd.children).filter(function(key) {
+            return is_file(cwd.children[key]);
+        });
+        callback(files);
+    } else {
+        callback(Object.keys(commands));
+    }
+}
+
 $(function() {
     $("#tty1").terminal(command, {
         greetings: "Welcome To My Portfolio!\n",
-        prompt: "[[;white;]" + path.join("/") + "$ ]" 
+        prompt: (callback) => {callback(path.join("/") + "/ $ ")},
+        completion: completion
     });
 
     $("#tty2").terminal(command, {
